@@ -1,0 +1,730 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 1.1vw;
+}
+
+body {
+  max-width: 1700px;
+}
+
+.menu_cont {
+  height: 10vh;
+  width: 100%;
+  max-width: 1700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.main_cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  overflow-x: hidden;
+}
+
+
+
+
+/** General template **/
+
+.web_cont {
+  height: 90vh;
+  max-height: 1000px;
+  width: 100vw;
+  max-width: 1700px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.web_pres {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vw;
+  max-height: 180px;
+  width: 70%;
+
+
+}
+.web_title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  height: 40%;
+}
+
+.web_desc {
+  font-size: 0.85rem;
+  width: 60%;
+  text-align: center;
+  height: 60%;
+}
+
+.web_img {
+  height: auto;
+  width: 55%;
+  min-width: 85vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  top: -3rem;
+}
+
+
+
+.web_img img {
+  width: 48%;
+  height: auto;
+  margin-top: 1rem
+
+}
+
+/** IMM **/
+
+#astroImm {
+  position: absolute;
+  z-index: -5;
+  left: -30%;
+  top: 0;
+  height: auto;
+  width: 30%;
+
+}
+
+#plus__imm {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  left: 95%;
+  top: 80%;
+}
+
+/** FOSTER MEDIA **/
+
+#gloveFosterMediaImg {
+  position: absolute;
+  z-index: -5;
+  left: 95%;
+  top: 40%;
+  height: 60%;
+  width: auto;
+  transform: rotate(45deg);
+
+
+
+}
+
+#plus__foster {
+  position: absolute;
+  height: 20%;
+  width: auto;
+  left: -3%;
+  top: -10%;
+}
+
+
+
+
+/** CHIC MARIE **/
+
+#moonChicimg {
+  position: absolute;
+  z-index: -5;
+  left: 95%;
+  height: auto;
+  width: 12%;
+}
+
+#plus__chic-img {
+  position: absolute;
+  height: 20%;
+  width: auto;
+  left: -8%;
+  top: 65%;
+}
+
+
+
+
+/** LYNX **/
+
+#astrolynximg {
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  height: auto;
+  width: 20%;
+}
+
+#plus__lynx-img {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  left: 81%;
+  top: 88%;
+}
+
+#lynx_desc {
+  width: 45%;
+}
+
+/** ZILLOW **/
+
+
+#astroZillowImg{
+  height: 50%;
+  width: 17.5%;
+  position: absolute;
+  top: 46%;
+  left: -17.5%;
+}
+
+#plus__zillow-img {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  left: 95%;
+  top: 15%;
+}
+
+#zillow_pres {
+
+  height: 7vw;
+}
+
+
+
+
+
+/** WEARAWAY **/
+
+#astroWearawayImg {
+  height: 60%;
+  width: auto;
+  position: absolute;
+  top: 21%;
+  left: 100%;
+}
+
+
+
+
+#plus__wearaway-img {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  left: -8%;
+  top: 63%;
+}
+
+/** BRIQUE PAR BRIQUE **/
+
+
+#plus__bpb-img {
+  position: absolute;
+  height: 20%;
+  width: auto;
+  left: 90%;
+  top: 23%;
+}
+
+ #moon__bpb-img {
+   height: 45%;
+   width: auto;
+   position: absolute;
+   top: -18%;
+   left: -17%;
+   z-index: -1;
+ }
+
+
+/** Luna **/
+
+
+#plus__luna-img {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  left: 95%;
+  top: 53%;
+}
+
+#lunaAstro-img {
+  height: 75%;
+  width: auto;
+  position: absolute;
+  top: 18%;
+  left: -16%;
+  z-index: -1;
+
+}
+
+
+/** Community art **/
+
+#caAstroImg {
+  height: 55%;
+  width: auto;
+  position: absolute;
+  top: 39%;
+  left: 92%;
+  z-index: -1;
+
+}
+
+#plus__ca-img {
+  position: absolute;
+  height: 50%;
+  width: auto;
+  left: -10%;
+  top: 5%;
+}
+
+/** Venndor **/
+
+
+
+
+#plus__venndor-img {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  left: 95%;
+  top: 12%;
+}
+
+#spaceship__venndor-img {
+  position: absolute;
+  top: 18%;
+  left: -30%;
+  width: 60%;
+  height: auto;
+  z-index: -1;
+
+}
+
+
+/** Mobile general template **/
+@media screen and (min-width: 300px) and (max-width: 800px) {
+
+  html {
+    font-size: 16px;
+  }
+    .menu_cont {
+      height: 4rem;
+      position:relative;
+      z-index: 9;
+
+    }
+
+  .web_cont {
+    height: auto;
+    min-height: initial;
+    max-height: none;
+    width: 100vw;
+    max-width: initial;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .web_cont__first {
+    padding-top: 3rem;
+  }
+
+
+  .web_pres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    max-height: none;
+    width: 80%;
+    margin-bottom: 0;
+
+  }
+
+  .web_title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    height: auto;
+    text-align: center;
+    padding: 0;
+
+
+  }
+
+  .bigger--web--title {
+    height: auto;
+  }
+
+  .web_desc {
+    font-size: 0.9rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    height: auto;
+    padding: 1rem 0;
+    margin: 0 0;
+  }
+
+  .web_img {
+    height: auto;
+    width: 80%;
+    min-width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: auto;
+
+  }
+
+
+
+
+  .web_img img {
+    height: auto;
+    width: 100%;
+    /**Cancel max width**/
+    max-width: none;
+    margin-top: 1rem;
+
+
+  }
+
+  /** IMM  MOBILE**/
+
+  #astroImm {
+    position: absolute;
+    z-index: -5;
+    left: -30%;
+    top: 30%;
+    height: auto;
+    width: 60%;
+
+  }
+
+  #plus__imm {
+    position: absolute;
+    height: 12%;
+    width: auto;
+    left: 90%;
+    top: 90%;
+  }
+
+
+  /** FOSTER MEDIA MOBILE**/
+
+  #gloveFosterMediaImg {
+    position: absolute;
+    z-index: -5;
+    left: 80%;
+    top: 40%;
+    height: 50%;
+    width: auto;
+
+    /* cancel the rotate from mobile */
+    transform: rotate(0);
+
+
+
+  }
+
+  #plus__foster {
+    position: absolute;
+    height: 13%;
+    width: auto;
+    left: -10%;
+    top: 20%;
+  }
+
+
+  /** CHIC MOBILE**/
+
+  #moonChicimg {
+    position: absolute;
+    z-index: -5;
+    left: 90%;
+    top: 20%;
+    height: 70%;
+    width: auto;
+  }
+
+  #plus__chic-img {
+    position: absolute;
+    height: 11%;
+    width: auto;
+    left: -20%;
+    top: 55%;
+  }
+
+  #lynx_desc {
+    width: 100%;
+  }
+
+
+  /** LYNX MOBILE**/
+
+  #astrolynximg {
+    position: absolute;
+    z-index: -1;
+    left: -30%;
+    top: 0%;
+    height: auto;
+    width: 50%;
+  }
+
+  #plus__lynx-img {
+    position: absolute;
+    height: 13%;
+    width: auto;
+    left: 65%;
+    top: 93%;
+  }
+
+  #lynx_desc {
+    width: 100%;
+  }
+
+  /** ZILLOW MOBILE**/
+
+
+  #astroZillowImg{
+    height: auto;
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    left: -50%;
+    z-index: -1;
+  }
+
+  #plus__zillow-img {
+    position: absolute;
+    height: 15%;
+    width: auto;
+    left: 90%;
+    top: 33%;
+  }
+
+  #zillow_pres {
+
+    height: 10rem;
+  }
+
+
+
+
+
+  /** WEARAWAY MOBILE**/
+
+  #astroWearawayImg {
+    height: 60%;
+    width: auto;
+    position: absolute;
+    top: 21%;
+    left: 100%;
+  }
+
+
+
+
+  #plus__wearaway-img {
+    position: absolute;
+    height: 15%;
+    width: auto;
+    left: -20%;
+    top: 55%;
+  }
+
+  /** BRIQUE PAR BRIQUE MOBILE**/
+
+
+  #plus__bpb-img {
+    position: absolute;
+    height: 10%;
+    width: auto;
+    left: 83%;
+    top: 33%;
+  }
+
+   #moon__bpb-img {
+     height: 25%;
+     width: auto;
+     position: absolute;
+     top: -10%;
+     left: -30%;
+     z-index: -1;
+   }
+
+
+
+
+  /** Luna MOBILE**/
+
+
+  #plus__luna-img {
+    position: absolute;
+    height: 15%;
+    width: auto;
+    left: 90%;
+    top: 75%;
+  }
+
+  #lunaAstro-img {
+    height: 65%;
+    width: auto;
+    position: absolute;
+    top: 18%;
+    left: -40%;
+    z-index: -1;
+
+  }
+
+
+  /** Community art MOBILE**/
+
+  #caAstroImg {
+    height: 65%;
+    width: auto;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    z-index: -1;
+
+  }
+
+  #plus__ca-img {
+    position: absolute;
+    height: 20%;
+    width: auto;
+    left: -10%;
+    top: 3%;
+  }
+
+  /** Venndor MOBILE**/
+
+
+
+
+  #plus__venndor-img {
+    position: absolute;
+    height: 13%;
+    width: auto;
+    left: 90%;
+    top: 30%;
+  }
+
+  #spaceship__venndor-img {
+    position: absolute;
+    top: 35%;
+    left: -60%;
+    width: auto;
+    height: 50%;
+    z-index: -1;
+
+  }
+
+
+
+
+/** for tablet size**/
+@media screen and (min-height: 800px) and (max-width: 800px) {
+
+
+  .web_cont {
+    height: auto;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+    max-height: none;
+  }
+
+  .web_cont__first {
+    padding-top: 3rem;
+  }
+
+
+  .web_pres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    max-height: initial;
+    width: 80%;
+    margin-bottom: 0;
+
+
+  }
+
+  .web_title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    height: 40%;
+    text-align: center;
+
+  }
+
+
+  .web_desc {
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    height: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .web_img {
+    height: auto;
+    width: 70%;
+    position: relative;
+    top: auto;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+  }
+
+
+
+
+  .web_img img {
+    height: auto;
+    width: 100%;
+    /**Cancel max width**/
+    max-width: none;
+    margin-top: 1rem;
+
+
+  }
+
+  #brbr__web--pres {
+    height: 13rem;
+  }
+
+  .bigger--web--title {
+    height: 13rem;
+  }
+
+
+}

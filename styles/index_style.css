@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  max-width: 1700px;
+}
+
+
+html {
+  overflow-x: hidden;
+  font-size: 1.1vw;
+}
+
+
+.menu_cont {
+  height: 10vh;
+  width: 100%;
+  max-width: 1700px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.main_cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+}
+
+.intro_cont {
+  height: 120vh;
+  max-height: 68vw;
+  width: 100vw;
+  max-width: 1700px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+
+.never_stop_cont{
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.never_stop {
+  height: 5rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-left: solid 2px grey;
+}
+
+.never_stop_text , .keep_true{
+  width: 15rem;
+  font-size: 0.9rem;
+  margin-left: 25px;
+}
+
+.never_stop_text {
+  color: grey;
+  font-style: italic;
+}
+
+.keep_true {
+  font-weight: bolder;
+  color: black;
+}
+
+.astron_cont {
+  width: 34%;
+  height: 100%;
+  font-style: italic;
+  position: relative;
+  font-weight: 600;
+  overflow-y: hidden;
+}
+
+.astron_cont > p {
+  position: absolute;
+  top: 30vw;
+  left: 0.5vw;
+  font-size: 1.1rem;
+  z-index: 2;
+  width: 40%;
+  word-break:normal;
+}
+
+.astron_cont img, .inspace_cont img {
+  width: 100%;
+  height: auto;
+}
+
+.astron_cont img {
+  position: absolute;
+  top: 25vw;
+  z-index: 0;
+}
+
+.inspace_cont{
+  width: 30%;
+  height: 100%;
+  margin-left: 2.5%;
+  position: relative;
+}
+
+.inspace_cont img {
+  position: absolute;
+  top: 12vw;
+
+}
+
+.inspace_cont p {
+  position: relative;
+  top: 33vw;
+  left: -9vw;
+  height: auto;
+  width: auto;;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 2;
+
+
+}
+
+.forever_90 {
+  position: absolute;
+  font-size: 15vw;
+  left: 27vw;
+  top: 23vw;
+  font-weight: bold;
+  width: 70vw;
+}
+
+.short_story_cont {
+  height: 50vw;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-y: scroll;
+
+}
+
+.short_story {
+  width: 65%;
+  height: 22rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+  top: 5%;
+
+}
+
+.short_story h2 {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+
+}
+
+.short_story p {
+  text-align: left;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.short_story a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  height: 15px;
+}
+
+.short_story_cont img {
+  position: absolute;
+  z-index: 0;
+  height: auto;
+  width: 25vw;
+  left: 70vw ;
+}
+
+/* for mobile **/
+@media screen and (min-width: 300px) and (max-width: 800px) {
+
+html {
+  font-size: 16px;
+}
+  .menu_cont {
+    height: 4rem;
+    position:relative;
+    z-index: 9;
+
+  }
+
+  .intro_cont {
+    height: 55rem;
+    max-height: none;
+    max-width: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; 
+  }
+
+  .never_stop_cont{
+    display: none;
+
+  }
+
+  .inspace_cont{
+    width: 85%;
+    height: 30%;
+    margin-left: 0;
+    position: relative;
+    order:1;
+    margin-top: 2rem;
+
+  }
+
+  .inspace_cont img {
+    position: absolute;
+    top: 0;
+  }
+
+  .inspace_cont p {
+    position: relative;
+    top: 100%;
+    left: -25%;
+    font-size: 0.8rem;
+    z-index: 1;
+
+
+  }
+
+
+  .astron_cont {
+    width: 85%;
+    height: 45%;
+    font-style: italic;
+    position: relative;
+    font-weight: 600;
+    order:2;
+
+  }
+
+  .astron_cont > p {
+    position: absolute;
+    top: 9%;;
+    left: 1%;
+    font-size: 0.7rem;
+    z-index: 2;
+  }
+
+  .astron_cont img {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+
+  /**.forever_90 {
+    position: absolute;
+    font-size: 23vw;
+    left: 25%;
+    top: 80vw;
+    font-weight: bold;
+    width: 70vh;
+    height: 25vw;
+    transform-origin: 66vw 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }**/
+
+  .forever_90 {
+    position: absolute;
+    font-size: 7rem;
+    left: calc(100% - 8rem);
+    padding-right: 5%;
+    top: -5rem;
+    width: 8rem;
+    height: 55rem;/*height of the intro class**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  .short_story_cont {
+    height: auto;
+    padding-top: 10rem;
+    width: 100%;
+    max-width: none;
+    align-items: flex-end;
+    overflow-x: hidden;
+  }
+
+  .short_story {
+    width: 85%;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    top: -2rem;
+  }
+
+  .short_story h2 {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+
+  }
+
+  .short_story p {
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .short_story a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    height: 15px;
+  }
+
+  .short_story_cont img {
+    position: absolute;
+    z-index: 0;
+    height: auto;
+    width: 40vw;
+    left: 70vw ;
+    top: 0;
+  }
+
+
+}
+
+
+/** for iphone 3 and smaller **/
+@media screen and (min-width: 300px) and (max-height: 500px) {
+
+  .short_story_cont {
+    height: 95vh;
+    width: 100%;
+    max-width: none;
+    align-items: flex-end;
+  }
+
+
+  .short_story {
+
+    top: -5vh;
+
+  }
+
+  .short_story_cont img {
+
+    top: 8vh;
+  }
+
+
+}

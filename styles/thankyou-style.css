@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+html {
+  overflow-x: hidden;
+  font-size: 1.1vw;
+}
+body {
+  max-width: 1700px;
+}
+
+.menu_cont {
+  height: 10vh;
+  width: 100%;
+  max-width: 1700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.main_cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+
+}
+
+
+/** General template **/
+
+.presentation_cont {
+  height: 90vh;
+  max-height: 1000px;
+  width: 100vw;
+  max-width: 1700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../images/spacewalk.jpg");
+  background-position: center;
+
+}
+
+
+
+.thankyou__cont {
+  width: 36rem;
+  height: 29rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou__cont p{
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+
+.thankyou__cont img{
+  position: absolute;
+  z-index: 0;
+  width: 5rem;
+  height: auto;
+}
+
+#plus_top_img {
+  top: 20%;
+  left: 63%;
+}
+
+#plus_bottom_img {
+  top: 67%;
+  left: 31%;
+}
+
+
+/** general templates for mobile**/
+@media screen and (min-width: 300px) and (max-width: 800px) {
+
+  html {
+    font-size: 16px;
+  }
+    .menu_cont {
+      height: 4rem;
+      position:relative;
+      z-index: 9;
+
+    }
+
+
+
+  .presentation_cont {
+    height: 38rem;
+    max-height: none;
+    width: 100vw;
+    max-width: none;
+    margin-top: 0;
+    background-size: 310%;
+
+
+  }
+
+
+
+  .thankyou__cont {
+    width: 85%;
+    height: 80%;
+
+  }
+
+
+  .thankyou__cont p{
+    font-size: 28px;
+  }
+
+  .thankyou__cont img{
+    width: 20%;
+    height: auto;
+  }
+
+#plus_top_img {
+  top: 10%;
+  left: 70%;
+}
+
+#plus_bottom_img {
+  top: 73%;
+  left: 10%;
+}
+
+
+}

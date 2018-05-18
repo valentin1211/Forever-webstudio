@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  height: 100vh;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 1.1vw;
+}
+
+
+.menu {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+
+}
+
+.icon_wrap {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.icon_wrap img {
+  position: relative;
+  height: auto;
+  width: 20vw;
+}
+
+
+
+.menu_bar {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  position: absolute;
+  left: 68vw;
+
+
+}
+.menu-item a{
+  color: black;
+  height: 100%;
+  text-decoration: none;
+  font-size: 0.9rem;
+
+}
+
+.home { /** Home section for mobile**/
+  display: none;
+}
+
+#cross_img {
+  display: none;
+}
+
+#menu_icon {
+  display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+
+
+  .menu {
+    height: 4rem; /**depending size in index.php menu-cont**/
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    left: 0%;
+    z-index: 20;
+
+  }
+
+
+
+  .icon_wrap {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .icon_wrap  a {
+    height: 85%;
+  }
+  .icon_wrap img {
+    position: relative;
+    height: 100%;
+    width: auto;
+    left: -15%;
+  }
+
+
+  .menu_bar {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    left: auto;
+    top: 0;
+    background-color: black;
+    opacity: 0.80;
+    position: fixed;
+
+
+  }
+
+
+
+  .menu-item {
+    margin: 10%;
+  }
+  .menu-item a{
+    color: white;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+  }
+
+
+
+  .menu_bar {
+    display: none;
+
+  }
+
+  .home {
+    display: flex;
+  }
+
+  #cross_img {
+    position: absolute;
+    height: 4vh;
+    width: auto;
+    top: 4vh;
+    left: calc(100% - 8vh);
+    filter: invert(100%);
+  }
+
+  #menu_icon {
+    display: flex;
+    height: auto ;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 87%;
+    z-index: 99;
+  }
+
+}
